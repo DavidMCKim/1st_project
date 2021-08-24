@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6babb45c362c4def8efb3c99dec6d24e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6babb45c362c4def8efb3c99dec6d24e" ></div>
+        
+</body>
+<script>    
+    
+            var map_6babb45c362c4def8efb3c99dec6d24e = L.map(
+                "map_6babb45c362c4def8efb3c99dec6d24e",
+                {
+                    center: [33.37667294774629, 126.52868088805356],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9dba71213ba14ea086f12b570a57934d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6babb45c362c4def8efb3c99dec6d24e);
+        
+    
+            var marker_175cdc0979cc4e8a9413df2db6e99f96 = L.marker(
+                [33.512233365978, 126.525242465269],
+                {}
+            ).addTo(map_6babb45c362c4def8efb3c99dec6d24e);
+        
+    
+            var icon_6d4a20a22ba645b4809dfbffb7ad25e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_175cdc0979cc4e8a9413df2db6e99f96.setIcon(icon_6d4a20a22ba645b4809dfbffb7ad25e4);
+        
+    
+        var popup_6a609368f64c4362bc4b2e9788737c4e = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_12e266ee7fc3469bbfb429dd0d3807e4 = $(`<div id="html_12e266ee7fc3469bbfb429dd0d3807e4" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 이도일동(스타벅스제주칠성점 부근)</div>`)[0];
+            popup_6a609368f64c4362bc4b2e9788737c4e.setContent(html_12e266ee7fc3469bbfb429dd0d3807e4);
+        
+
+        marker_175cdc0979cc4e8a9413df2db6e99f96.bindPopup(popup_6a609368f64c4362bc4b2e9788737c4e)
+        ;
+
+        
+    
+    
+            var marker_0f29dde60abc4db1ba47bcaad149171e = L.marker(
+                [33.500013039871, 126.515328585447],
+                {}
+            ).addTo(map_6babb45c362c4def8efb3c99dec6d24e);
+        
+    
+            var icon_eab74449bef140f99da8a29fb40fda00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0f29dde60abc4db1ba47bcaad149171e.setIcon(icon_eab74449bef140f99da8a29fb40fda00);
+        
+    
+        var popup_215aaa4e307f49f693bf3917cf99991a = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_93c01fe73d32460080d4f3b0b9b8ee08 = $(`<div id="html_93c01fe73d32460080d4f3b0b9b8ee08" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 삼도일동(오라교 부근)</div>`)[0];
+            popup_215aaa4e307f49f693bf3917cf99991a.setContent(html_93c01fe73d32460080d4f3b0b9b8ee08);
+        
+
+        marker_0f29dde60abc4db1ba47bcaad149171e.bindPopup(popup_215aaa4e307f49f693bf3917cf99991a)
+        ;
+
+        
+    
+    
+            var marker_404c22812c6e4b75aca7986a46551ba5 = L.marker(
+                [33.50021902329, 126.549327360071],
+                {}
+            ).addTo(map_6babb45c362c4def8efb3c99dec6d24e);
+        
+    
+            var icon_05eaeef1d1bf47489bfb0a56c470a5b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_404c22812c6e4b75aca7986a46551ba5.setIcon(icon_05eaeef1d1bf47489bfb0a56c470a5b5);
+        
+    
+        var popup_e93e2bca2b994765b4bc8a4d83895928 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_3f12ef2c22d0439884c5ce5872fc7e69 = $(`<div id="html_3f12ef2c22d0439884c5ce5872fc7e69" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 일도이동(제주일도대림2차아파트 부근)</div>`)[0];
+            popup_e93e2bca2b994765b4bc8a4d83895928.setContent(html_3f12ef2c22d0439884c5ce5872fc7e69);
+        
+
+        marker_404c22812c6e4b75aca7986a46551ba5.bindPopup(popup_e93e2bca2b994765b4bc8a4d83895928)
+        ;
+
+        
+    
+    
+            var marker_8a6b1497f70f4017920a6a07ee303734 = L.marker(
+                [33.488325647512, 126.477135194735],
+                {}
+            ).addTo(map_6babb45c362c4def8efb3c99dec6d24e);
+        
+    
+            var icon_fb5222263b054dafb72c48e8ae623ab0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8a6b1497f70f4017920a6a07ee303734.setIcon(icon_fb5222263b054dafb72c48e8ae623ab0);
+        
+    
+        var popup_7ad17a76268a452f86a84657c5765c70 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_773ff10d4ba44ba6bfe5e382833677a7 = $(`<div id="html_773ff10d4ba44ba6bfe5e382833677a7" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 노형동(제주양돈농협 부근)</div>`)[0];
+            popup_7ad17a76268a452f86a84657c5765c70.setContent(html_773ff10d4ba44ba6bfe5e382833677a7);
+        
+
+        marker_8a6b1497f70f4017920a6a07ee303734.bindPopup(popup_7ad17a76268a452f86a84657c5765c70)
+        ;
+
+        
+    
+    
+            var marker_d85d3b63a37f421186685c67bb713487 = L.marker(
+                [33.512804350042, 126.528852200969],
+                {}
+            ).addTo(map_6babb45c362c4def8efb3c99dec6d24e);
+        
+    
+            var icon_882dcfb1fce44dc08a8eb456a524b2c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d85d3b63a37f421186685c67bb713487.setIcon(icon_882dcfb1fce44dc08a8eb456a524b2c7);
+        
+    
+        var popup_9bf5d24eafa34ffcb738ac530d8b69da = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_2290ed4d6d87430e8446da12cf8c7442 = $(`<div id="html_2290ed4d6d87430e8446da12cf8c7442" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 일도일동(동문로터리 부근)</div>`)[0];
+            popup_9bf5d24eafa34ffcb738ac530d8b69da.setContent(html_2290ed4d6d87430e8446da12cf8c7442);
+        
+
+        marker_d85d3b63a37f421186685c67bb713487.bindPopup(popup_9bf5d24eafa34ffcb738ac530d8b69da)
+        ;
+
+        
+    
+    
+            var marker_4e26b5ff394f49768befbe70acae0c65 = L.marker(
+                [33.508198240158, 126.533649947388],
+                {}
+            ).addTo(map_6babb45c362c4def8efb3c99dec6d24e);
+        
+    
+            var icon_83851c0586df4465b71fe03cbf13e5f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4e26b5ff394f49768befbe70acae0c65.setIcon(icon_83851c0586df4465b71fe03cbf13e5f1);
+        
+    
+        var popup_d55ef96a679c49b6b9c8e6706e0ff22e = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_26f23e0ebeee440090079f3973b39fb8 = $(`<div id="html_26f23e0ebeee440090079f3973b39fb8" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 일도이동(호남석재사거리 부근)</div>`)[0];
+            popup_d55ef96a679c49b6b9c8e6706e0ff22e.setContent(html_26f23e0ebeee440090079f3973b39fb8);
+        
+
+        marker_4e26b5ff394f49768befbe70acae0c65.bindPopup(popup_d55ef96a679c49b6b9c8e6706e0ff22e)
+        ;
+
+        
+    
+    
+            var marker_a7bd8069665647aea9fd1e81a8d8b867 = L.marker(
+                [33.505919018149, 126.508640934433],
+                {}
+            ).addTo(map_6babb45c362c4def8efb3c99dec6d24e);
+        
+    
+            var icon_d2212221453c45fbb978bd6b50f68e98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a7bd8069665647aea9fd1e81a8d8b867.setIcon(icon_d2212221453c45fbb978bd6b50f68e98);
+        
+    
+        var popup_73109e320a834fadb78dde4e0a530d93 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_0eea9a69651640da9fe2a65644451fc4 = $(`<div id="html_0eea9a69651640da9fe2a65644451fc4" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 용담이동(용문로100 부근)</div>`)[0];
+            popup_73109e320a834fadb78dde4e0a530d93.setContent(html_0eea9a69651640da9fe2a65644451fc4);
+        
+
+        marker_a7bd8069665647aea9fd1e81a8d8b867.bindPopup(popup_73109e320a834fadb78dde4e0a530d93)
+        ;
+
+        
+    
+    
+            var marker_94b01dfb42e94c80a4712b7db0df8359 = L.marker(
+                [33.496531829881, 126.532139396617],
+                {}
+            ).addTo(map_6babb45c362c4def8efb3c99dec6d24e);
+        
+    
+            var icon_a3825bef7846400681526adbaa39bbb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_94b01dfb42e94c80a4712b7db0df8359.setIcon(icon_a3825bef7846400681526adbaa39bbb0);
+        
+    
+        var popup_7cff15db0fe84766bcffc96524a4e25a = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_332a2ee5f0084e6d89ab66b25e33ff2e = $(`<div id="html_332a2ee5f0084e6d89ab66b25e33ff2e" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 이도이동(영도갤럭시타운 부근)</div>`)[0];
+            popup_7cff15db0fe84766bcffc96524a4e25a.setContent(html_332a2ee5f0084e6d89ab66b25e33ff2e);
+        
+
+        marker_94b01dfb42e94c80a4712b7db0df8359.bindPopup(popup_7cff15db0fe84766bcffc96524a4e25a)
+        ;
+
+        
+    
+    
+            var marker_cdee39c2f0364a12b52d58dfca0709a5 = L.marker(
+                [33.252987954531, 126.561120256396],
+                {}
+            ).addTo(map_6babb45c362c4def8efb3c99dec6d24e);
+        
+    
+            var icon_4da18ffcdc8941f98cf0ecf2f63ebd97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cdee39c2f0364a12b52d58dfca0709a5.setIcon(icon_4da18ffcdc8941f98cf0ecf2f63ebd97);
+        
+    
+        var popup_3ea302aad5314dbabfab53823b0ceeba = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_9a34af13f33641a4b063e56e8af3cb08 = $(`<div id="html_9a34af13f33641a4b063e56e8af3cb08" style="width: 100.0%; height: 100.0%;">제주특별자치도 서귀포시 서귀동(중앙로타리 부근)</div>`)[0];
+            popup_3ea302aad5314dbabfab53823b0ceeba.setContent(html_9a34af13f33641a4b063e56e8af3cb08);
+        
+
+        marker_cdee39c2f0364a12b52d58dfca0709a5.bindPopup(popup_3ea302aad5314dbabfab53823b0ceeba)
+        ;
+
+        
+    
+    
+            var marker_2ae44bbd1d734eaa905027889c7d188a = L.marker(
+                [33.251949532546, 126.574322615198],
+                {}
+            ).addTo(map_6babb45c362c4def8efb3c99dec6d24e);
+        
+    
+            var icon_8d345eb76b3142c4996ca35a5e2559e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2ae44bbd1d734eaa905027889c7d188a.setIcon(icon_8d345eb76b3142c4996ca35a5e2559e8);
+        
+    
+        var popup_6ffe4e19df754879abcd804d077780f5 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_ad4fe7c28d0e4810ac1c51f1a3269da6 = $(`<div id="html_ad4fe7c28d0e4810ac1c51f1a3269da6" style="width: 100.0%; height: 100.0%;">제주특별자치도 서귀포시 동홍동(동홍중앙로2 부근)</div>`)[0];
+            popup_6ffe4e19df754879abcd804d077780f5.setContent(html_ad4fe7c28d0e4810ac1c51f1a3269da6);
+        
+
+        marker_2ae44bbd1d734eaa905027889c7d188a.bindPopup(popup_6ffe4e19df754879abcd804d077780f5)
+        ;
+
+        
+    
+</script>

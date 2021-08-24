@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7b00271a0c3b4677a057e5de894cd2fa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7b00271a0c3b4677a057e5de894cd2fa" ></div>
+        
+</body>
+<script>    
+    
+            var map_7b00271a0c3b4677a057e5de894cd2fa = L.map(
+                "map_7b00271a0c3b4677a057e5de894cd2fa",
+                {
+                    center: [33.37667294774629, 126.52868088805356],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b5d3e7831f0145afbe4491778f373461 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var marker_5dc310e9af7446e7ba150753b4561ff8 = L.marker(
+                [33.4899863, 126.4850919],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_c7b709d7f2034c29bebfb6090a7ead6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5dc310e9af7446e7ba150753b4561ff8.setIcon(icon_c7b709d7f2034c29bebfb6090a7ead6e);
+        
+    
+        var popup_06cfdec435d64b5fa9c575d5e2b9f88b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_feaf07a52633416db679818be67c7809 = $(`<div id="html_feaf07a52633416db679818be67c7809" style="width: 100.0%; height: 100.0%;">제주한라병원</div>`)[0];
+            popup_06cfdec435d64b5fa9c575d5e2b9f88b.setContent(html_feaf07a52633416db679818be67c7809);
+        
+
+        marker_5dc310e9af7446e7ba150753b4561ff8.bindPopup(popup_06cfdec435d64b5fa9c575d5e2b9f88b)
+        ;
+
+        
+    
+    
+            var marker_4d1f68aa722648038cfe3e143a0c04d2 = L.marker(
+                [33.4670429, 126.5457559],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_fe49ffbc67d0478fad224ae88825e1a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4d1f68aa722648038cfe3e143a0c04d2.setIcon(icon_fe49ffbc67d0478fad224ae88825e1a0);
+        
+    
+        var popup_423eaf50d1d141b0aaf2a75a88deaff3 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_e84a9cba42d148f9a85cd9bb859a899f = $(`<div id="html_e84a9cba42d148f9a85cd9bb859a899f" style="width: 100.0%; height: 100.0%;">제주대학교병원</div>`)[0];
+            popup_423eaf50d1d141b0aaf2a75a88deaff3.setContent(html_e84a9cba42d148f9a85cd9bb859a899f);
+        
+
+        marker_4d1f68aa722648038cfe3e143a0c04d2.bindPopup(popup_423eaf50d1d141b0aaf2a75a88deaff3)
+        ;
+
+        
+    
+    
+            var marker_2933952c4b964d02ba5cde18064d9707 = L.marker(
+                [33.4962921, 126.5462527],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_6032c8eb8bef435a84e6c69c5e540c7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2933952c4b964d02ba5cde18064d9707.setIcon(icon_6032c8eb8bef435a84e6c69c5e540c7a);
+        
+    
+        var popup_f2f249df182d4d85aa47a80adf40732b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_52bd6d94795141908a1499c26037692f = $(`<div id="html_52bd6d94795141908a1499c26037692f" style="width: 100.0%; height: 100.0%;">한마음병원</div>`)[0];
+            popup_f2f249df182d4d85aa47a80adf40732b.setContent(html_52bd6d94795141908a1499c26037692f);
+        
+
+        marker_2933952c4b964d02ba5cde18064d9707.bindPopup(popup_f2f249df182d4d85aa47a80adf40732b)
+        ;
+
+        
+    
+    
+            var marker_cdfd8c7a0d194ac999b5a5dd55b6ef84 = L.marker(
+                [33.254995, 126.5647515],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_317179eefa5c4561bda6fc45090b3a33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cdfd8c7a0d194ac999b5a5dd55b6ef84.setIcon(icon_317179eefa5c4561bda6fc45090b3a33);
+        
+    
+        var popup_2fae273f54ff4122bb1eabdf720eaf21 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_010c4bf7dc02411ea4922fd380682dc2 = $(`<div id="html_010c4bf7dc02411ea4922fd380682dc2" style="width: 100.0%; height: 100.0%;">서귀포의료원</div>`)[0];
+            popup_2fae273f54ff4122bb1eabdf720eaf21.setContent(html_010c4bf7dc02411ea4922fd380682dc2);
+        
+
+        marker_cdfd8c7a0d194ac999b5a5dd55b6ef84.bindPopup(popup_2fae273f54ff4122bb1eabdf720eaf21)
+        ;
+
+        
+    
+    
+            var marker_4aa8d54a01644785819da69d7420d75a = L.marker(
+                [33.4922592, 126.470738],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_33f1fc81830648bc9db0a927566ec197 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4aa8d54a01644785819da69d7420d75a.setIcon(icon_33f1fc81830648bc9db0a927566ec197);
+        
+    
+        var popup_c461a70b046641c89f171998272939a8 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_ebacfc0d5b1447a7a589aad6f44cb5f4 = $(`<div id="html_ebacfc0d5b1447a7a589aad6f44cb5f4" style="width: 100.0%; height: 100.0%;">제주중앙병원</div>`)[0];
+            popup_c461a70b046641c89f171998272939a8.setContent(html_ebacfc0d5b1447a7a589aad6f44cb5f4);
+        
+
+        marker_4aa8d54a01644785819da69d7420d75a.bindPopup(popup_c461a70b046641c89f171998272939a8)
+        ;
+
+        
+    
+    
+            var marker_a3bdcd02bb014092853ec1d6ba5ec55e = L.marker(
+                [33.5002078, 126.5170609],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_bb7e1e414b0a4b6b87ae721a9954a9ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a3bdcd02bb014092853ec1d6ba5ec55e.setIcon(icon_bb7e1e414b0a4b6b87ae721a9954a9ab);
+        
+    
+        var popup_b41065dee18242c1a0c74a697ac0f02c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_6adb6df7f4984e86af61f6fd7c3430ae = $(`<div id="html_6adb6df7f4984e86af61f6fd7c3430ae" style="width: 100.0%; height: 100.0%;">한국병원</div>`)[0];
+            popup_b41065dee18242c1a0c74a697ac0f02c.setContent(html_6adb6df7f4984e86af61f6fd7c3430ae);
+        
+
+        marker_a3bdcd02bb014092853ec1d6ba5ec55e.bindPopup(popup_b41065dee18242c1a0c74a697ac0f02c)
+        ;
+
+        
+    
+    
+            var marker_71a642c4b8824026b64235316c1f7f82 = L.marker(
+                [33.512233365978, 126.525242465269],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_fc5faee3af654792a49152de9f0c5ee9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_71a642c4b8824026b64235316c1f7f82.setIcon(icon_fc5faee3af654792a49152de9f0c5ee9);
+        
+    
+        var popup_7a79a17c4bc14db6a806f19f0da948ec = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_4a665fe4c7744b609fc27e6679469d72 = $(`<div id="html_4a665fe4c7744b609fc27e6679469d72" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 이도일동(스타벅스제주칠성점 부근)</div>`)[0];
+            popup_7a79a17c4bc14db6a806f19f0da948ec.setContent(html_4a665fe4c7744b609fc27e6679469d72);
+        
+
+        marker_71a642c4b8824026b64235316c1f7f82.bindPopup(popup_7a79a17c4bc14db6a806f19f0da948ec)
+        ;
+
+        
+    
+    
+            var marker_ce348b6f9a8846e4af2b13ccee7041c6 = L.marker(
+                [33.500013039871, 126.515328585447],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_fffd3cabc07a4e119fd7015316a133b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ce348b6f9a8846e4af2b13ccee7041c6.setIcon(icon_fffd3cabc07a4e119fd7015316a133b3);
+        
+    
+        var popup_69f412f93389409a87847d7a9f84938d = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_ed76f83f4f154527b2d8af1755801eeb = $(`<div id="html_ed76f83f4f154527b2d8af1755801eeb" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 삼도일동(오라교 부근)</div>`)[0];
+            popup_69f412f93389409a87847d7a9f84938d.setContent(html_ed76f83f4f154527b2d8af1755801eeb);
+        
+
+        marker_ce348b6f9a8846e4af2b13ccee7041c6.bindPopup(popup_69f412f93389409a87847d7a9f84938d)
+        ;
+
+        
+    
+    
+            var marker_9a1051c4593047fdbe05852d82d650c5 = L.marker(
+                [33.50021902329, 126.549327360071],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_60e89819d59548bf8f8b8ce6fc9394b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9a1051c4593047fdbe05852d82d650c5.setIcon(icon_60e89819d59548bf8f8b8ce6fc9394b0);
+        
+    
+        var popup_1e1c55b8bca847e481baf0e3699be14c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_5026c922ddef4a3ea8ab00484dc8f78a = $(`<div id="html_5026c922ddef4a3ea8ab00484dc8f78a" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 일도이동(제주일도대림2차아파트 부근)</div>`)[0];
+            popup_1e1c55b8bca847e481baf0e3699be14c.setContent(html_5026c922ddef4a3ea8ab00484dc8f78a);
+        
+
+        marker_9a1051c4593047fdbe05852d82d650c5.bindPopup(popup_1e1c55b8bca847e481baf0e3699be14c)
+        ;
+
+        
+    
+    
+            var marker_973d11a90a3a4310aba554366e92bcce = L.marker(
+                [33.488325647512, 126.477135194735],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_a167ae923e044b3f82cc51d07b58645c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_973d11a90a3a4310aba554366e92bcce.setIcon(icon_a167ae923e044b3f82cc51d07b58645c);
+        
+    
+        var popup_2ab85b232d464bdc8e34f2377a9f03ca = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_d46fb13bcc434397a35e84c735aa5b11 = $(`<div id="html_d46fb13bcc434397a35e84c735aa5b11" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 노형동(제주양돈농협 부근)</div>`)[0];
+            popup_2ab85b232d464bdc8e34f2377a9f03ca.setContent(html_d46fb13bcc434397a35e84c735aa5b11);
+        
+
+        marker_973d11a90a3a4310aba554366e92bcce.bindPopup(popup_2ab85b232d464bdc8e34f2377a9f03ca)
+        ;
+
+        
+    
+    
+            var marker_01342fa0120f4e40a84f0d9b39de709b = L.marker(
+                [33.512804350042, 126.528852200969],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_abb2d60a3f16480e8213273fc508a5ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_01342fa0120f4e40a84f0d9b39de709b.setIcon(icon_abb2d60a3f16480e8213273fc508a5ec);
+        
+    
+        var popup_7c642d9012ef4edcbe4a1b67a8e42194 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_cd153356482c4436920ea56bf22b58cd = $(`<div id="html_cd153356482c4436920ea56bf22b58cd" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 일도일동(동문로터리 부근)</div>`)[0];
+            popup_7c642d9012ef4edcbe4a1b67a8e42194.setContent(html_cd153356482c4436920ea56bf22b58cd);
+        
+
+        marker_01342fa0120f4e40a84f0d9b39de709b.bindPopup(popup_7c642d9012ef4edcbe4a1b67a8e42194)
+        ;
+
+        
+    
+    
+            var marker_87f1af035691442c8e2105fdacd0cf9f = L.marker(
+                [33.508198240158, 126.533649947388],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_da00e39ec8004e4f8fbbe288400e7355 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_87f1af035691442c8e2105fdacd0cf9f.setIcon(icon_da00e39ec8004e4f8fbbe288400e7355);
+        
+    
+        var popup_1fb422df29fb4d0a938be6b3ef7502d7 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_6be12b84d77443f18001abf50582314c = $(`<div id="html_6be12b84d77443f18001abf50582314c" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 일도이동(호남석재사거리 부근)</div>`)[0];
+            popup_1fb422df29fb4d0a938be6b3ef7502d7.setContent(html_6be12b84d77443f18001abf50582314c);
+        
+
+        marker_87f1af035691442c8e2105fdacd0cf9f.bindPopup(popup_1fb422df29fb4d0a938be6b3ef7502d7)
+        ;
+
+        
+    
+    
+            var marker_8046b1807f7b41d7907e106d34395f04 = L.marker(
+                [33.505919018149, 126.508640934433],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_34e2c93417484df7922d76b39fb41287 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8046b1807f7b41d7907e106d34395f04.setIcon(icon_34e2c93417484df7922d76b39fb41287);
+        
+    
+        var popup_c22976da0e964a81bad6e134ec65bfc6 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_13d9ac5bb7a04ce3900c43a6a74fef04 = $(`<div id="html_13d9ac5bb7a04ce3900c43a6a74fef04" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 용담이동(용문로100 부근)</div>`)[0];
+            popup_c22976da0e964a81bad6e134ec65bfc6.setContent(html_13d9ac5bb7a04ce3900c43a6a74fef04);
+        
+
+        marker_8046b1807f7b41d7907e106d34395f04.bindPopup(popup_c22976da0e964a81bad6e134ec65bfc6)
+        ;
+
+        
+    
+    
+            var marker_028384ca85aa4d7ab336e418e9fd5d70 = L.marker(
+                [33.496531829881, 126.532139396617],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_91edce40311d44c88433286ff6ab9016 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_028384ca85aa4d7ab336e418e9fd5d70.setIcon(icon_91edce40311d44c88433286ff6ab9016);
+        
+    
+        var popup_e9f0bf6048174a8d8e7f00f2ed7b23d2 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_fd44ce30ecb3458d889841f3c99e818d = $(`<div id="html_fd44ce30ecb3458d889841f3c99e818d" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 이도이동(영도갤럭시타운 부근)</div>`)[0];
+            popup_e9f0bf6048174a8d8e7f00f2ed7b23d2.setContent(html_fd44ce30ecb3458d889841f3c99e818d);
+        
+
+        marker_028384ca85aa4d7ab336e418e9fd5d70.bindPopup(popup_e9f0bf6048174a8d8e7f00f2ed7b23d2)
+        ;
+
+        
+    
+    
+            var marker_6a9b744e9b4948a99f5c7adbf6317cfa = L.marker(
+                [33.252987954531, 126.561120256396],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_0eaef71d4993473aa7063f56e2f1e5c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6a9b744e9b4948a99f5c7adbf6317cfa.setIcon(icon_0eaef71d4993473aa7063f56e2f1e5c7);
+        
+    
+        var popup_a1a814b6066040aa8a3f51e3e92b06cd = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_ba0b4609c5ad4e14806055cabc1db396 = $(`<div id="html_ba0b4609c5ad4e14806055cabc1db396" style="width: 100.0%; height: 100.0%;">제주특별자치도 서귀포시 서귀동(중앙로타리 부근)</div>`)[0];
+            popup_a1a814b6066040aa8a3f51e3e92b06cd.setContent(html_ba0b4609c5ad4e14806055cabc1db396);
+        
+
+        marker_6a9b744e9b4948a99f5c7adbf6317cfa.bindPopup(popup_a1a814b6066040aa8a3f51e3e92b06cd)
+        ;
+
+        
+    
+    
+            var marker_df4204dccacf490ab86d23b8cdbbbf24 = L.marker(
+                [33.251949532546, 126.574322615198],
+                {}
+            ).addTo(map_7b00271a0c3b4677a057e5de894cd2fa);
+        
+    
+            var icon_7a1bd1bc3bc34180973c186ccfa9eee4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_df4204dccacf490ab86d23b8cdbbbf24.setIcon(icon_7a1bd1bc3bc34180973c186ccfa9eee4);
+        
+    
+        var popup_70474ac2dac1420baf8d004ef1946e40 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_89f245eeeaa546539d5ebea83da024db = $(`<div id="html_89f245eeeaa546539d5ebea83da024db" style="width: 100.0%; height: 100.0%;">제주특별자치도 서귀포시 동홍동(동홍중앙로2 부근)</div>`)[0];
+            popup_70474ac2dac1420baf8d004ef1946e40.setContent(html_89f245eeeaa546539d5ebea83da024db);
+        
+
+        marker_df4204dccacf490ab86d23b8cdbbbf24.bindPopup(popup_70474ac2dac1420baf8d004ef1946e40)
+        ;
+
+        
+    
+</script>

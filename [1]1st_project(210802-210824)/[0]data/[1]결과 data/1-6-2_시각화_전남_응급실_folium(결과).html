@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_27be3c6ba132472f97db94b4db6effb9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_27be3c6ba132472f97db94b4db6effb9" ></div>
+        
+</body>
+<script>    
+    
+            var map_27be3c6ba132472f97db94b4db6effb9 = L.map(
+                "map_27be3c6ba132472f97db94b4db6effb9",
+                {
+                    center: [35.06103569534745, 126.94581733182362],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9c79eca4460a432e90f936ef9683cab5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var marker_7c26928f6a534f799f615d3741217ef3 = L.marker(
+                [34.8094131, 126.4164009],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_69bc2efdbe8444bd90f7f0d70e16d1d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7c26928f6a534f799f615d3741217ef3.setIcon(icon_69bc2efdbe8444bd90f7f0d70e16d1d2);
+        
+    
+        var popup_ec516859229640d79c82070bae21d2fc = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_c4919f4a899248c18d50c8f6a8c4b125 = $(`<div id="html_c4919f4a899248c18d50c8f6a8c4b125" style="width: 100.0%; height: 100.0%;">목포한국병원</div>`)[0];
+            popup_ec516859229640d79c82070bae21d2fc.setContent(html_c4919f4a899248c18d50c8f6a8c4b125);
+        
+
+        marker_7c26928f6a534f799f615d3741217ef3.bindPopup(popup_ec516859229640d79c82070bae21d2fc)
+        ;
+
+        
+    
+    
+            var marker_f9b5a137326a4fad9d94c4d8b32a958a = L.marker(
+                [34.9646324, 127.5437369],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_81752a97a5014a2096fb82db125f57c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f9b5a137326a4fad9d94c4d8b32a958a.setIcon(icon_81752a97a5014a2096fb82db125f57c4);
+        
+    
+        var popup_a0740515351b41cba95732892892208d = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_8d16b393d5e642058c3df20287fddf57 = $(`<div id="html_8d16b393d5e642058c3df20287fddf57" style="width: 100.0%; height: 100.0%;">성가롤로병원</div>`)[0];
+            popup_a0740515351b41cba95732892892208d.setContent(html_8d16b393d5e642058c3df20287fddf57);
+        
+
+        marker_f9b5a137326a4fad9d94c4d8b32a958a.bindPopup(popup_a0740515351b41cba95732892892208d)
+        ;
+
+        
+    
+    
+            var marker_e0a0cb2a839644f0a2706fa59e0d3a1a = L.marker(
+                [35.0593098, 127.0026172],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_d36cb439b0094664b4386e8a4c31d522 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e0a0cb2a839644f0a2706fa59e0d3a1a.setIcon(icon_d36cb439b0094664b4386e8a4c31d522);
+        
+    
+        var popup_3f6f2e1389eb4c288b866585557a65ad = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_c8033a74de20408195e71cead98e722b = $(`<div id="html_c8033a74de20408195e71cead98e722b" style="width: 100.0%; height: 100.0%;">화순전남대학교병원</div>`)[0];
+            popup_3f6f2e1389eb4c288b866585557a65ad.setContent(html_c8033a74de20408195e71cead98e722b);
+        
+
+        marker_e0a0cb2a839644f0a2706fa59e0d3a1a.bindPopup(popup_3f6f2e1389eb4c288b866585557a65ad)
+        ;
+
+        
+    
+    
+            var marker_f92bfd8d92d7444ca3add0fcba348af5 = L.marker(
+                [34.7690776, 127.6542576],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_57de612d8386404d8b0691b12ae1ff47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f92bfd8d92d7444ca3add0fcba348af5.setIcon(icon_57de612d8386404d8b0691b12ae1ff47);
+        
+    
+        var popup_24ae4d2d8e2b4addb3570b5ac8e5cc2f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_266131c1f08c45818c12683aae5b3e19 = $(`<div id="html_266131c1f08c45818c12683aae5b3e19" style="width: 100.0%; height: 100.0%;">여천전남병원</div>`)[0];
+            popup_24ae4d2d8e2b4addb3570b5ac8e5cc2f.setContent(html_266131c1f08c45818c12683aae5b3e19);
+        
+
+        marker_f92bfd8d92d7444ca3add0fcba348af5.bindPopup(popup_24ae4d2d8e2b4addb3570b5ac8e5cc2f)
+        ;
+
+        
+    
+    
+            var marker_2667cff99a404081bfbfa303954a3c59 = L.marker(
+                [34.821301, 126.421011],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_1ffe19dd8ad2425c8d7e72c9fe35ce6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2667cff99a404081bfbfa303954a3c59.setIcon(icon_1ffe19dd8ad2425c8d7e72c9fe35ce6d);
+        
+    
+        var popup_6f8ed332aeec48ef9aef8572d43531e5 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_3df9376ad33e44d8aa1017d4865ede5b = $(`<div id="html_3df9376ad33e44d8aa1017d4865ede5b" style="width: 100.0%; height: 100.0%;">의료법인목포구암의료재단 목포중앙병원</div>`)[0];
+            popup_6f8ed332aeec48ef9aef8572d43531e5.setContent(html_3df9376ad33e44d8aa1017d4865ede5b);
+        
+
+        marker_2667cff99a404081bfbfa303954a3c59.bindPopup(popup_6f8ed332aeec48ef9aef8572d43531e5)
+        ;
+
+        
+    
+    
+            var marker_6f125d104cf443fabed9260f7118bead = L.marker(
+                [34.936145, 127.696966],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_f556a8d5fc6d47efb575280675d35b67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6f125d104cf443fabed9260f7118bead.setIcon(icon_f556a8d5fc6d47efb575280675d35b67);
+        
+    
+        var popup_079dd4716c5a4e9bb1d316a775cb1a37 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_79a19bab264e47bd82f6d4a7f726fe98 = $(`<div id="html_79a19bab264e47bd82f6d4a7f726fe98" style="width: 100.0%; height: 100.0%;">광양사랑병원</div>`)[0];
+            popup_079dd4716c5a4e9bb1d316a775cb1a37.setContent(html_79a19bab264e47bd82f6d4a7f726fe98);
+        
+
+        marker_6f125d104cf443fabed9260f7118bead.bindPopup(popup_079dd4716c5a4e9bb1d316a775cb1a37)
+        ;
+
+        
+    
+    
+            var marker_3c0dc947b8384834b7fa540a60ebc1d4 = L.marker(
+                [34.961136, 127.5251537],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_f9ac17a9c01c4fa7bac7e8209f2f7742 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3c0dc947b8384834b7fa540a60ebc1d4.setIcon(icon_f9ac17a9c01c4fa7bac7e8209f2f7742);
+        
+    
+        var popup_57c5046a627b4db6ace01755ebcf91dd = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_819d09b30ff4411a82c8817953fc0e91 = $(`<div id="html_819d09b30ff4411a82c8817953fc0e91" style="width: 100.0%; height: 100.0%;">근로복지공단 순천병원</div>`)[0];
+            popup_57c5046a627b4db6ace01755ebcf91dd.setContent(html_819d09b30ff4411a82c8817953fc0e91);
+        
+
+        marker_3c0dc947b8384834b7fa540a60ebc1d4.bindPopup(popup_57c5046a627b4db6ace01755ebcf91dd)
+        ;
+
+        
+    
+    
+            var marker_17d46886a3614b36b84f0045f35485d2 = L.marker(
+                [35.0366967, 126.7215888],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_c1135824bfd54ad7a4e633d8864d344b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_17d46886a3614b36b84f0045f35485d2.setIcon(icon_c1135824bfd54ad7a4e633d8864d344b);
+        
+    
+        var popup_f864a2c062b64f9f987151a838141cdb = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_e8bdf5721cd34ba1a267dbf58c72fb59 = $(`<div id="html_e8bdf5721cd34ba1a267dbf58c72fb59" style="width: 100.0%; height: 100.0%;">나주종합병원</div>`)[0];
+            popup_f864a2c062b64f9f987151a838141cdb.setContent(html_e8bdf5721cd34ba1a267dbf58c72fb59);
+        
+
+        marker_17d46886a3614b36b84f0045f35485d2.bindPopup(popup_f864a2c062b64f9f987151a838141cdb)
+        ;
+
+        
+    
+    
+            var marker_83d58a2526a9448783ccfc90235bf4c6 = L.marker(
+                [34.9914382, 126.4891531],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_11e479b80fe64bbb912186fc72ee2123 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_83d58a2526a9448783ccfc90235bf4c6.setIcon(icon_11e479b80fe64bbb912186fc72ee2123);
+        
+    
+        var popup_50c6cd4fdadf45df9bf98bd406343bf2 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_ffe0b10cab4048cea67ab2b205cd7538 = $(`<div id="html_ffe0b10cab4048cea67ab2b205cd7538" style="width: 100.0%; height: 100.0%;">대송의료재단무안병원</div>`)[0];
+            popup_50c6cd4fdadf45df9bf98bd406343bf2.setContent(html_ffe0b10cab4048cea67ab2b205cd7538);
+        
+
+        marker_83d58a2526a9448783ccfc90235bf4c6.bindPopup(popup_50c6cd4fdadf45df9bf98bd406343bf2)
+        ;
+
+        
+    
+    
+            var marker_42cddb9d97e940be82ab431f8d51cea4 = L.marker(
+                [34.8044415, 126.4205118],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_8ab7b519f19347e190939850928f0687 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_42cddb9d97e940be82ab431f8d51cea4.setIcon(icon_8ab7b519f19347e190939850928f0687);
+        
+    
+        var popup_17bd5feee7e14990a467a1d87d50a523 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_d0926e3d35bb4156b4570100c1770074 = $(`<div id="html_d0926e3d35bb4156b4570100c1770074" style="width: 100.0%; height: 100.0%;">목포기독병원</div>`)[0];
+            popup_17bd5feee7e14990a467a1d87d50a523.setContent(html_d0926e3d35bb4156b4570100c1770074);
+        
+
+        marker_42cddb9d97e940be82ab431f8d51cea4.bindPopup(popup_17bd5feee7e14990a467a1d87d50a523)
+        ;
+
+        
+    
+    
+            var marker_e69147d427974af0b3cac4e2fdff5fac = L.marker(
+                [34.8039025, 126.4054617],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_026aef7b17e14a0cb5e19b34b09c6106 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e69147d427974af0b3cac4e2fdff5fac.setIcon(icon_026aef7b17e14a0cb5e19b34b09c6106);
+        
+    
+        var popup_174b87aee35644fd92dbcff869f47c86 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_3a3b0b566de947ee9b4e8a4744adf8c4 = $(`<div id="html_3a3b0b566de947ee9b4e8a4744adf8c4" style="width: 100.0%; height: 100.0%;">목포시의료원</div>`)[0];
+            popup_174b87aee35644fd92dbcff869f47c86.setContent(html_3a3b0b566de947ee9b4e8a4744adf8c4);
+        
+
+        marker_e69147d427974af0b3cac4e2fdff5fac.bindPopup(popup_174b87aee35644fd92dbcff869f47c86)
+        ;
+
+        
+    
+    
+            var marker_6a8e350eaba242609cfcf1176ad6ffff = L.marker(
+                [34.9549256, 127.5242812],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_5e15f6226c17426e8f24a52fe083b569 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6a8e350eaba242609cfcf1176ad6ffff.setIcon(icon_5e15f6226c17426e8f24a52fe083b569);
+        
+    
+        var popup_77becf666b1e4575b95266ee21a7d4b3 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_7431a7631cda41638aee97d30d666912 = $(`<div id="html_7431a7631cda41638aee97d30d666912" style="width: 100.0%; height: 100.0%;">순천제일병원</div>`)[0];
+            popup_77becf666b1e4575b95266ee21a7d4b3.setContent(html_7431a7631cda41638aee97d30d666912);
+        
+
+        marker_6a8e350eaba242609cfcf1176ad6ffff.bindPopup(popup_77becf666b1e4575b95266ee21a7d4b3)
+        ;
+
+        
+    
+    
+            var marker_6171882c460b4c469f0aabba04bdaff0 = L.marker(
+                [34.7447253, 127.7280156],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_fabbfddf895d490dbeae7d10558808df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6171882c460b4c469f0aabba04bdaff0.setIcon(icon_fabbfddf895d490dbeae7d10558808df);
+        
+    
+        var popup_56d0b941093c40418e0e882595001fec = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_619d37f04aef4ff6815da397c79dd5ea = $(`<div id="html_619d37f04aef4ff6815da397c79dd5ea" style="width: 100.0%; height: 100.0%;">여수전남병원</div>`)[0];
+            popup_56d0b941093c40418e0e882595001fec.setContent(html_619d37f04aef4ff6815da397c79dd5ea);
+        
+
+        marker_6171882c460b4c469f0aabba04bdaff0.bindPopup(popup_56d0b941093c40418e0e882595001fec)
+        ;
+
+        
+    
+    
+            var marker_ac5bfc1c2f014125afcf3c54f91d48b0 = L.marker(
+                [35.2844869, 126.4989822],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_5df9a757e9ee4f5db180ed6a1f706dae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ac5bfc1c2f014125afcf3c54f91d48b0.setIcon(icon_5df9a757e9ee4f5db180ed6a1f706dae);
+        
+    
+        var popup_e997a98f52a24a8d9103b77d3ffe7b43 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_4cb9d0b9b44a4c479de283c0743bcb75 = $(`<div id="html_4cb9d0b9b44a4c479de283c0743bcb75" style="width: 100.0%; height: 100.0%;">영광종합병원</div>`)[0];
+            popup_e997a98f52a24a8d9103b77d3ffe7b43.setContent(html_4cb9d0b9b44a4c479de283c0743bcb75);
+        
+
+        marker_ac5bfc1c2f014125afcf3c54f91d48b0.bindPopup(popup_e997a98f52a24a8d9103b77d3ffe7b43)
+        ;
+
+        
+    
+    
+            var marker_96faa9e239ba40febfa41f3ac2ad6e68 = L.marker(
+                [35.2749984, 126.5110264],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_a67d55f64df54b3d88c10e7b042dc24d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_96faa9e239ba40febfa41f3ac2ad6e68.setIcon(icon_a67d55f64df54b3d88c10e7b042dc24d);
+        
+    
+        var popup_a8d05aa1db224fcbbe00f773fe56fc7c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_b6491607577e4d60a3df34c41f43338a = $(`<div id="html_b6491607577e4d60a3df34c41f43338a" style="width: 100.0%; height: 100.0%;">의료법인 거명의료재단 영광기독병원</div>`)[0];
+            popup_a8d05aa1db224fcbbe00f773fe56fc7c.setContent(html_b6491607577e4d60a3df34c41f43338a);
+        
+
+        marker_96faa9e239ba40febfa41f3ac2ad6e68.bindPopup(popup_a8d05aa1db224fcbbe00f773fe56fc7c)
+        ;
+
+        
+    
+    
+            var marker_e84a9cf0fa52484d9a310c8c106ced65 = L.marker(
+                [34.6771036, 126.9109408],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_5695243e63444e55801cd8bdce880305 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e84a9cf0fa52484d9a310c8c106ced65.setIcon(icon_5695243e63444e55801cd8bdce880305);
+        
+    
+        var popup_55189bb2a5854e1ab39025335443c6ff = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_046d9a6dd6ef426da545cbf5031bed86 = $(`<div id="html_046d9a6dd6ef426da545cbf5031bed86" style="width: 100.0%; height: 100.0%;">의료법인 우범의료재단 장흥종합병원</div>`)[0];
+            popup_55189bb2a5854e1ab39025335443c6ff.setContent(html_046d9a6dd6ef426da545cbf5031bed86);
+        
+
+        marker_e84a9cf0fa52484d9a310c8c106ced65.bindPopup(popup_55189bb2a5854e1ab39025335443c6ff)
+        ;
+
+        
+    
+    
+            var marker_9ea47d8a8fcf4e3d9c9c781a90fab94d = L.marker(
+                [34.6210043, 127.2939397],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_e6f99f597bfd439da228e1a5df7728c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9ea47d8a8fcf4e3d9c9c781a90fab94d.setIcon(icon_e6f99f597bfd439da228e1a5df7728c5);
+        
+    
+        var popup_5dff7553eb1445219c6b4c6324f0b1f3 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_9fdcccdf96a14584927e4fbe9b6274b5 = $(`<div id="html_9fdcccdf96a14584927e4fbe9b6274b5" style="width: 100.0%; height: 100.0%;">의료법인영성의료재단고흥종합병원</div>`)[0];
+            popup_5dff7553eb1445219c6b4c6324f0b1f3.setContent(html_9fdcccdf96a14584927e4fbe9b6274b5);
+        
+
+        marker_9ea47d8a8fcf4e3d9c9c781a90fab94d.bindPopup(popup_5dff7553eb1445219c6b4c6324f0b1f3)
+        ;
+
+        
+    
+    
+            var marker_255aa6211c1547ba87f90bc16d719619 = L.marker(
+                [34.9476145, 127.5125098],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_17620554f9d7463f8c6303772c3b4cfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_255aa6211c1547ba87f90bc16d719619.setIcon(icon_17620554f9d7463f8c6303772c3b4cfd);
+        
+    
+        var popup_006ed91242cb45f49d68a8a1138385a7 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_5f3eabea38b84983a91a5b1881d6411e = $(`<div id="html_5f3eabea38b84983a91a5b1881d6411e" style="width: 100.0%; height: 100.0%;">순천한국병원</div>`)[0];
+            popup_006ed91242cb45f49d68a8a1138385a7.setContent(html_5f3eabea38b84983a91a5b1881d6411e);
+        
+
+        marker_255aa6211c1547ba87f90bc16d719619.bindPopup(popup_006ed91242cb45f49d68a8a1138385a7)
+        ;
+
+        
+    
+    
+            var marker_a4045615eba64ee582088099ee1dfa27 = L.marker(
+                [34.8170249, 126.3802509],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_ced141fbe5994badab3d68c41c812631 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a4045615eba64ee582088099ee1dfa27.setIcon(icon_ced141fbe5994badab3d68c41c812631);
+        
+    
+        var popup_2eb2823c0bef4e1781f4f84fe09d4efb = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_21dcdad6805449849a28a0388a1ce877 = $(`<div id="html_21dcdad6805449849a28a0388a1ce877" style="width: 100.0%; height: 100.0%;">의료법인해민의료재단 세안종합병원</div>`)[0];
+            popup_2eb2823c0bef4e1781f4f84fe09d4efb.setContent(html_21dcdad6805449849a28a0388a1ce877);
+        
+
+        marker_a4045615eba64ee582088099ee1dfa27.bindPopup(popup_2eb2823c0bef4e1781f4f84fe09d4efb)
+        ;
+
+        
+    
+    
+            var marker_12fe49e60c67471b8a4592779ee7dbb2 = L.marker(
+                [34.5716667, 126.6128048],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_287a636c16974a268b892819bb9b672c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_12fe49e60c67471b8a4592779ee7dbb2.setIcon(icon_287a636c16974a268b892819bb9b672c);
+        
+    
+        var popup_2989e9726c324bca8aea5d1758657590 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_0e64a35a5c164b8fab50a7f6edfa7986 = $(`<div id="html_0e64a35a5c164b8fab50a7f6edfa7986" style="width: 100.0%; height: 100.0%;">의료법인행촌의료재단 해남종합병원</div>`)[0];
+            popup_2989e9726c324bca8aea5d1758657590.setContent(html_0e64a35a5c164b8fab50a7f6edfa7986);
+        
+
+        marker_12fe49e60c67471b8a4592779ee7dbb2.bindPopup(popup_2989e9726c324bca8aea5d1758657590)
+        ;
+
+        
+    
+    
+            var marker_f52f8b2a2bdf42a78d24dc56d9548cdf = L.marker(
+                [34.5834271, 126.6459248],
+                {}
+            ).addTo(map_27be3c6ba132472f97db94b4db6effb9);
+        
+    
+            var icon_74f56f80f3c14ccb885d54d3816556d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f52f8b2a2bdf42a78d24dc56d9548cdf.setIcon(icon_74f56f80f3c14ccb885d54d3816556d0);
+        
+    
+        var popup_ac2f93078fa74addb67a76e6cbd8e84f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_645902f7a7864301ac684beb68014b08 = $(`<div id="html_645902f7a7864301ac684beb68014b08" style="width: 100.0%; height: 100.0%;">해남우리종합병원</div>`)[0];
+            popup_ac2f93078fa74addb67a76e6cbd8e84f.setContent(html_645902f7a7864301ac684beb68014b08);
+        
+
+        marker_f52f8b2a2bdf42a78d24dc56d9548cdf.bindPopup(popup_ac2f93078fa74addb67a76e6cbd8e84f)
+        ;
+
+        
+    
+</script>

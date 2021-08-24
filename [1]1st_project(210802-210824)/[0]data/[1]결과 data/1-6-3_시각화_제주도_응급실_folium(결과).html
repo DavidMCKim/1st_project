@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3e10a548f1874733946fdf41efb15760 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3e10a548f1874733946fdf41efb15760" ></div>
+        
+</body>
+<script>    
+    
+            var map_3e10a548f1874733946fdf41efb15760 = L.map(
+                "map_3e10a548f1874733946fdf41efb15760",
+                {
+                    center: [33.37667294774629, 126.52868088805356],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2462223cba2f488db3d467e1c1007f59 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3e10a548f1874733946fdf41efb15760);
+        
+    
+            var marker_b729d5af804b46449a807ba636098747 = L.marker(
+                [33.4899863, 126.4850919],
+                {}
+            ).addTo(map_3e10a548f1874733946fdf41efb15760);
+        
+    
+            var icon_e18f94b5f00642b7a420b2dcbb79a020 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b729d5af804b46449a807ba636098747.setIcon(icon_e18f94b5f00642b7a420b2dcbb79a020);
+        
+    
+        var popup_ce40456dc9a94e56beb23335836706ea = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_0bb267f2b070488aae6b0386a2ff40fa = $(`<div id="html_0bb267f2b070488aae6b0386a2ff40fa" style="width: 100.0%; height: 100.0%;">제주한라병원</div>`)[0];
+            popup_ce40456dc9a94e56beb23335836706ea.setContent(html_0bb267f2b070488aae6b0386a2ff40fa);
+        
+
+        marker_b729d5af804b46449a807ba636098747.bindPopup(popup_ce40456dc9a94e56beb23335836706ea)
+        ;
+
+        
+    
+    
+            var marker_9bd93e04050a4782844725c6b80d6f62 = L.marker(
+                [33.4670429, 126.5457559],
+                {}
+            ).addTo(map_3e10a548f1874733946fdf41efb15760);
+        
+    
+            var icon_946b5509fc294d338c9e2a65f2d51c5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9bd93e04050a4782844725c6b80d6f62.setIcon(icon_946b5509fc294d338c9e2a65f2d51c5d);
+        
+    
+        var popup_cd7166a0273e40d28dcdbafc3795afae = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_dc6476fc60ed4f99ab446a5506eb6523 = $(`<div id="html_dc6476fc60ed4f99ab446a5506eb6523" style="width: 100.0%; height: 100.0%;">제주대학교병원</div>`)[0];
+            popup_cd7166a0273e40d28dcdbafc3795afae.setContent(html_dc6476fc60ed4f99ab446a5506eb6523);
+        
+
+        marker_9bd93e04050a4782844725c6b80d6f62.bindPopup(popup_cd7166a0273e40d28dcdbafc3795afae)
+        ;
+
+        
+    
+    
+            var marker_f8f0e97bdc884c3abfe02aed64e8b681 = L.marker(
+                [33.4962921, 126.5462527],
+                {}
+            ).addTo(map_3e10a548f1874733946fdf41efb15760);
+        
+    
+            var icon_05ce9f92117f4da880a41fe54fbd7804 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f8f0e97bdc884c3abfe02aed64e8b681.setIcon(icon_05ce9f92117f4da880a41fe54fbd7804);
+        
+    
+        var popup_134e628233794020a04240a0480cebde = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_0dc1cacae11a497289f509fd267f2bc3 = $(`<div id="html_0dc1cacae11a497289f509fd267f2bc3" style="width: 100.0%; height: 100.0%;">한마음병원</div>`)[0];
+            popup_134e628233794020a04240a0480cebde.setContent(html_0dc1cacae11a497289f509fd267f2bc3);
+        
+
+        marker_f8f0e97bdc884c3abfe02aed64e8b681.bindPopup(popup_134e628233794020a04240a0480cebde)
+        ;
+
+        
+    
+    
+            var marker_cbecc40843c74e729e28ff12ca0cd4bf = L.marker(
+                [33.254995, 126.5647515],
+                {}
+            ).addTo(map_3e10a548f1874733946fdf41efb15760);
+        
+    
+            var icon_fa3c1b4b8f93422a86439831a32f4bf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cbecc40843c74e729e28ff12ca0cd4bf.setIcon(icon_fa3c1b4b8f93422a86439831a32f4bf6);
+        
+    
+        var popup_a74063c3f86e44099d0be01d2ea7230b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_310362ea7b9a4dc0a8c319e34145b3e5 = $(`<div id="html_310362ea7b9a4dc0a8c319e34145b3e5" style="width: 100.0%; height: 100.0%;">서귀포의료원</div>`)[0];
+            popup_a74063c3f86e44099d0be01d2ea7230b.setContent(html_310362ea7b9a4dc0a8c319e34145b3e5);
+        
+
+        marker_cbecc40843c74e729e28ff12ca0cd4bf.bindPopup(popup_a74063c3f86e44099d0be01d2ea7230b)
+        ;
+
+        
+    
+    
+            var marker_dced14862cf74dbab58998a771001496 = L.marker(
+                [33.4922592, 126.470738],
+                {}
+            ).addTo(map_3e10a548f1874733946fdf41efb15760);
+        
+    
+            var icon_ebc192aa25e3433d9149b8a5ea66ed43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_dced14862cf74dbab58998a771001496.setIcon(icon_ebc192aa25e3433d9149b8a5ea66ed43);
+        
+    
+        var popup_f5a9bb89acbf4d0dbf1b4f81f7e06444 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_5d35f94ab7fa4701a12269970abb99bb = $(`<div id="html_5d35f94ab7fa4701a12269970abb99bb" style="width: 100.0%; height: 100.0%;">제주중앙병원</div>`)[0];
+            popup_f5a9bb89acbf4d0dbf1b4f81f7e06444.setContent(html_5d35f94ab7fa4701a12269970abb99bb);
+        
+
+        marker_dced14862cf74dbab58998a771001496.bindPopup(popup_f5a9bb89acbf4d0dbf1b4f81f7e06444)
+        ;
+
+        
+    
+    
+            var marker_3227902456de4122942967d8e110f4ff = L.marker(
+                [33.5002078, 126.5170609],
+                {}
+            ).addTo(map_3e10a548f1874733946fdf41efb15760);
+        
+    
+            var icon_45e5cfac1c5b4099a12ddd2862f70b21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3227902456de4122942967d8e110f4ff.setIcon(icon_45e5cfac1c5b4099a12ddd2862f70b21);
+        
+    
+        var popup_c726731c4f1b4779844912a9e95fa803 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_e077aeb80eb44508893b64840f2e0efe = $(`<div id="html_e077aeb80eb44508893b64840f2e0efe" style="width: 100.0%; height: 100.0%;">한국병원</div>`)[0];
+            popup_c726731c4f1b4779844912a9e95fa803.setContent(html_e077aeb80eb44508893b64840f2e0efe);
+        
+
+        marker_3227902456de4122942967d8e110f4ff.bindPopup(popup_c726731c4f1b4779844912a9e95fa803)
+        ;
+
+        
+    
+</script>

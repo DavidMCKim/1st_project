@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fc116c7207684efc95ff525ceaa5e914 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fc116c7207684efc95ff525ceaa5e914" ></div>
+        
+</body>
+<script>    
+    
+            var map_fc116c7207684efc95ff525ceaa5e914 = L.map(
+                "map_fc116c7207684efc95ff525ceaa5e914",
+                {
+                    center: [36.744896795974725, 126.80694644343993],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_263bd48e406e4e21844e626479db0430 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fc116c7207684efc95ff525ceaa5e914);
+        
+    
+            var marker_889abda55f4844bb952b7a91497d581c = L.marker(
+                [36.8420156, 127.1725085],
+                {}
+            ).addTo(map_fc116c7207684efc95ff525ceaa5e914);
+        
+    
+            var icon_a88490dfad4f46fabcf0dadfd45cd954 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_889abda55f4844bb952b7a91497d581c.setIcon(icon_a88490dfad4f46fabcf0dadfd45cd954);
+        
+    
+        var popup_ce7bed6805c64216a7967ae0b57cbc9d = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_75601d1ea0cf4fea82f22cd99a41847c = $(`<div id="html_75601d1ea0cf4fea82f22cd99a41847c" style="width: 100.0%; height: 100.0%;">단국대학교병원부속병원</div>`)[0];
+            popup_ce7bed6805c64216a7967ae0b57cbc9d.setContent(html_75601d1ea0cf4fea82f22cd99a41847c);
+        
+
+        marker_889abda55f4844bb952b7a91497d581c.bindPopup(popup_ce7bed6805c64216a7967ae0b57cbc9d)
+        ;
+
+        
+    
+    
+            var marker_ef78f65887834fe984d10b6cd17b7a5b = L.marker(
+                [36.8028806, 127.1363643],
+                {}
+            ).addTo(map_fc116c7207684efc95ff525ceaa5e914);
+        
+    
+            var icon_8dd0da147dc14ad7a06e0e7ef2d418e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ef78f65887834fe984d10b6cd17b7a5b.setIcon(icon_8dd0da147dc14ad7a06e0e7ef2d418e4);
+        
+    
+        var popup_147eb8b5186c42a2988b7f8f2a3f4829 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_28c389bd0583482ca36c2a9b69565c34 = $(`<div id="html_28c389bd0583482ca36c2a9b69565c34" style="width: 100.0%; height: 100.0%;">순천향대학교병원</div>`)[0];
+            popup_147eb8b5186c42a2988b7f8f2a3f4829.setContent(html_28c389bd0583482ca36c2a9b69565c34);
+        
+
+        marker_ef78f65887834fe984d10b6cd17b7a5b.bindPopup(popup_147eb8b5186c42a2988b7f8f2a3f4829)
+        ;
+
+        
+    
+    
+            var marker_4fec5f439e324160a0c1e3de6c383a8d = L.marker(
+                [36.7972574, 127.1311574],
+                {}
+            ).addTo(map_fc116c7207684efc95ff525ceaa5e914);
+        
+    
+            var icon_9fa204c777e54a5fb379ff12907982cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4fec5f439e324160a0c1e3de6c383a8d.setIcon(icon_9fa204c777e54a5fb379ff12907982cd);
+        
+    
+        var popup_07c39b45202e46038edb1b6244fbf254 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_e76ebe9d21a6482c919ea8e8177257f0 = $(`<div id="html_e76ebe9d21a6482c919ea8e8177257f0" style="width: 100.0%; height: 100.0%;">천안충무병원</div>`)[0];
+            popup_07c39b45202e46038edb1b6244fbf254.setContent(html_e76ebe9d21a6482c919ea8e8177257f0);
+        
+
+        marker_4fec5f439e324160a0c1e3de6c383a8d.bindPopup(popup_07c39b45202e46038edb1b6244fbf254)
+        ;
+
+        
+    
+    
+            var marker_010e95a3fe54410bb2d834f1c9318cae = L.marker(
+                [36.7793814, 127.0194596],
+                {}
+            ).addTo(map_fc116c7207684efc95ff525ceaa5e914);
+        
+    
+            var icon_da5f79a338db4d60a9e0479e1d4339ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_010e95a3fe54410bb2d834f1c9318cae.setIcon(icon_da5f79a338db4d60a9e0479e1d4339ac);
+        
+    
+        var popup_49f3e769a33a4277b694cd87831f8bc2 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_a989e2469e544e118a6d8ee89ed332bf = $(`<div id="html_a989e2469e544e118a6d8ee89ed332bf" style="width: 100.0%; height: 100.0%;">아산충무병원</div>`)[0];
+            popup_49f3e769a33a4277b694cd87831f8bc2.setContent(html_a989e2469e544e118a6d8ee89ed332bf);
+        
+
+        marker_010e95a3fe54410bb2d834f1c9318cae.bindPopup(popup_49f3e769a33a4277b694cd87831f8bc2)
+        ;
+
+        
+    
+    
+            var marker_7621506fbdcc4072a2da3fca9dc24aef = L.marker(
+                [36.7756106, 126.4650989],
+                {}
+            ).addTo(map_fc116c7207684efc95ff525ceaa5e914);
+        
+    
+            var icon_6b6aa83b0e4649a2babedafc7721853e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7621506fbdcc4072a2da3fca9dc24aef.setIcon(icon_6b6aa83b0e4649a2babedafc7721853e);
+        
+    
+        var popup_aeb78310a4544f6893ab0415f6aac0c5 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_59ef518915bd45c38b12b5167354ace6 = $(`<div id="html_59ef518915bd45c38b12b5167354ace6" style="width: 100.0%; height: 100.0%;">충청남도서산의료원</div>`)[0];
+            popup_aeb78310a4544f6893ab0415f6aac0c5.setContent(html_59ef518915bd45c38b12b5167354ace6);
+        
+
+        marker_7621506fbdcc4072a2da3fca9dc24aef.bindPopup(popup_aeb78310a4544f6893ab0415f6aac0c5)
+        ;
+
+        
+    
+    
+            var marker_98e4c3fe0c7f4c65997667f30db70207 = L.marker(
+                [36.1923478, 127.0943895],
+                {}
+            ).addTo(map_fc116c7207684efc95ff525ceaa5e914);
+        
+    
+            var icon_4c82440b2ced4697a4949b383dacb3a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_98e4c3fe0c7f4c65997667f30db70207.setIcon(icon_4c82440b2ced4697a4949b383dacb3a9);
+        
+    
+        var popup_7d3efe973ed044b5bb0981a3c7f4593d = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_fc37511c1dff4742a87dc82e5920f8bd = $(`<div id="html_fc37511c1dff4742a87dc82e5920f8bd" style="width: 100.0%; height: 100.0%;">논산백제병원</div>`)[0];
+            popup_7d3efe973ed044b5bb0981a3c7f4593d.setContent(html_fc37511c1dff4742a87dc82e5920f8bd);
+        
+
+        marker_98e4c3fe0c7f4c65997667f30db70207.bindPopup(popup_7d3efe973ed044b5bb0981a3c7f4593d)
+        ;
+
+        
+    
+    
+            var marker_17680ffea7984e82928d45cb38a6df28 = L.marker(
+                [36.9042958, 126.6844291],
+                {}
+            ).addTo(map_fc116c7207684efc95ff525ceaa5e914);
+        
+    
+            var icon_c80f275506dd472580438fe6b6940e81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_17680ffea7984e82928d45cb38a6df28.setIcon(icon_c80f275506dd472580438fe6b6940e81);
+        
+    
+        var popup_5e9e6c567a024ca0a8efb560643887a2 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_f809bd74939f4bdfb3fd5d4f3940ebde = $(`<div id="html_f809bd74939f4bdfb3fd5d4f3940ebde" style="width: 100.0%; height: 100.0%;">당진종합병원</div>`)[0];
+            popup_5e9e6c567a024ca0a8efb560643887a2.setContent(html_f809bd74939f4bdfb3fd5d4f3940ebde);
+        
+
+        marker_17680ffea7984e82928d45cb38a6df28.bindPopup(popup_5e9e6c567a024ca0a8efb560643887a2)
+        ;
+
+        
+    
+    
+            var marker_998bb17330814958ae394176b04b85f3 = L.marker(
+                [36.5992891, 126.674393],
+                {}
+            ).addTo(map_fc116c7207684efc95ff525ceaa5e914);
+        
+    
+            var icon_86c583735c724c2ca106b33e50780fd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_998bb17330814958ae394176b04b85f3.setIcon(icon_86c583735c724c2ca106b33e50780fd0);
+        
+    
+        var popup_79bce60013044ad4851402bd50f5f14e = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_b17c1f87441f4f8dadcbff3a1953e63e = $(`<div id="html_b17c1f87441f4f8dadcbff3a1953e63e" style="width: 100.0%; height: 100.0%;">충청남도홍성의료원</div>`)[0];
+            popup_79bce60013044ad4851402bd50f5f14e.setContent(html_b17c1f87441f4f8dadcbff3a1953e63e);
+        
+
+        marker_998bb17330814958ae394176b04b85f3.bindPopup(popup_79bce60013044ad4851402bd50f5f14e)
+        ;
+
+        
+    
+    
+            var marker_23ff31adcf474d278e0efd586aee0c17 = L.marker(
+                [36.8047971, 127.1387529],
+                {}
+            ).addTo(map_fc116c7207684efc95ff525ceaa5e914);
+        
+    
+            var icon_2caed3876b7e467da923c2a63c32d9eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_23ff31adcf474d278e0efd586aee0c17.setIcon(icon_2caed3876b7e467da923c2a63c32d9eb);
+        
+    
+        var popup_831c0d7ca93943ccb64b61e09b18e9c2 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_fcc37301a4d54b6785615e593bb8a809 = $(`<div id="html_fcc37301a4d54b6785615e593bb8a809" style="width: 100.0%; height: 100.0%;">충청남도천안의료원</div>`)[0];
+            popup_831c0d7ca93943ccb64b61e09b18e9c2.setContent(html_fcc37301a4d54b6785615e593bb8a809);
+        
+
+        marker_23ff31adcf474d278e0efd586aee0c17.bindPopup(popup_831c0d7ca93943ccb64b61e09b18e9c2)
+        ;
+
+        
+    
+    
+            var marker_491d4aaf033d4d95861de78e1e0fb69c = L.marker(
+                [36.4589918, 127.1094561],
+                {}
+            ).addTo(map_fc116c7207684efc95ff525ceaa5e914);
+        
+    
+            var icon_39ff553b598d45b2bb56e234148e9ae1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_491d4aaf033d4d95861de78e1e0fb69c.setIcon(icon_39ff553b598d45b2bb56e234148e9ae1);
+        
+    
+        var popup_3b5f122748ae4f86bbd9d2d9d53f43be = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_4a245095b3ed4d6392e3a612b67918e2 = $(`<div id="html_4a245095b3ed4d6392e3a612b67918e2" style="width: 100.0%; height: 100.0%;">충청남도공주의료원</div>`)[0];
+            popup_3b5f122748ae4f86bbd9d2d9d53f43be.setContent(html_4a245095b3ed4d6392e3a612b67918e2);
+        
+
+        marker_491d4aaf033d4d95861de78e1e0fb69c.bindPopup(popup_3b5f122748ae4f86bbd9d2d9d53f43be)
+        ;
+
+        
+    
+    
+            var marker_956ee57397cd475cb3657658cc412c0c = L.marker(
+                [36.3809991, 126.6227881],
+                {}
+            ).addTo(map_fc116c7207684efc95ff525ceaa5e914);
+        
+    
+            var icon_1835a6f79ad647f09ce9d9c43c22d6e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_956ee57397cd475cb3657658cc412c0c.setIcon(icon_1835a6f79ad647f09ce9d9c43c22d6e9);
+        
+    
+        var popup_458a2c6f75494da69dc54b20b7b728a0 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_8128375fe81447df8e2aa252a364bddb = $(`<div id="html_8128375fe81447df8e2aa252a364bddb" style="width: 100.0%; height: 100.0%;">보령아산병원</div>`)[0];
+            popup_458a2c6f75494da69dc54b20b7b728a0.setContent(html_8128375fe81447df8e2aa252a364bddb);
+        
+
+        marker_956ee57397cd475cb3657658cc412c0c.bindPopup(popup_458a2c6f75494da69dc54b20b7b728a0)
+        ;
+
+        
+    
+    
+            var marker_f150ddd78978429b812539dbf9742364 = L.marker(
+                [36.7810666, 126.5034261],
+                {}
+            ).addTo(map_fc116c7207684efc95ff525ceaa5e914);
+        
+    
+            var icon_c4a4ee1cc72843aa9f653488a109fbaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f150ddd78978429b812539dbf9742364.setIcon(icon_c4a4ee1cc72843aa9f653488a109fbaf);
+        
+    
+        var popup_ea56c4f20d0249bbadf4be943b38e917 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_67b6291c964c49649072336105b6ea68 = $(`<div id="html_67b6291c964c49649072336105b6ea68" style="width: 100.0%; height: 100.0%;">서산중앙병원</div>`)[0];
+            popup_ea56c4f20d0249bbadf4be943b38e917.setContent(html_67b6291c964c49649072336105b6ea68);
+        
+
+        marker_f150ddd78978429b812539dbf9742364.bindPopup(popup_ea56c4f20d0249bbadf4be943b38e917)
+        ;
+
+        
+    
+</script>
